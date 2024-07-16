@@ -112,7 +112,7 @@ def monitor_directories(directories, webhook_url):
 # Example usage
 def main():
     # Load directories to monitor from inventory file
-    inventory_file = "directories.txt"
+    inventory_file = "/usr/local/bin/fim_tool/directories.txt"
     directories_to_monitor = read_directories_from_file(inventory_file)
 
     # Load Slack webhook URL from environment variable
