@@ -13,6 +13,8 @@ systemctl disable file_integrity_monitor.service
 # Remove the service file
 rm /etc/systemd/system/file_integrity_monitor.service
 
+rm /usr/local/bin/automate.py
+
 # Reload systemd to reflect changes
 systemctl daemon-reload
 
