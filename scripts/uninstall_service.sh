@@ -15,6 +15,8 @@ rm /etc/systemd/system/file_integrity_monitor.service
 
 rm /usr/local/bin/automate.py
 
+rm /usr/local/bin/fim_tool/directories.txt
+
 # Reload systemd to reflect changes
 systemctl daemon-reload
 
