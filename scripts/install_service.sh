@@ -7,7 +7,7 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # Copy automate.py to a suitable location
-cp automate.py /usr/local/bin/automate.py
+cp ../automate.py /usr/local/bin/automate.py
 
 # Create a systemd service file
 cat <<EOF > /etc/systemd/system/file_integrity_monitor.service
