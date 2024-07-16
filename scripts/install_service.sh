@@ -17,7 +17,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/usr/bin/python3 /usr/local/bin/automate.py
+ExecStart=python3 /usr/local/bin/automate.py
 Restart=always
 
 [Install]
