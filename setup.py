@@ -18,7 +18,7 @@ setup(
     description='File Integrity Monitoring tool with Slack notifications',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/gmorgan9/myfim',
+    url='https://github.com/gmorgan9/FIM_project',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
