@@ -111,6 +111,9 @@ def monitor_directories(directories, webhook_url):
 
 # Example usage
 def main():
+    print("Attempting to import main from fim_tool.automate...")
+    from fim_tool.automate import main
+    print("Successfully imported main.")
     # Load directories to monitor from inventory file
     inventory_file = "directories.txt"
     directories_to_monitor = read_directories_from_file(inventory_file)
