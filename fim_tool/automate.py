@@ -110,7 +110,7 @@ def monitor_directories(directories, webhook_url):
         time.sleep(5)  # Adjust the interval as needed
 
 # Example usage
-if __name__ == "__main__":
+def main():
     # Load directories to monitor from inventory file
     inventory_file = "directories.txt"
     directories_to_monitor = read_directories_from_file(inventory_file)
@@ -120,3 +120,7 @@ if __name__ == "__main__":
 
     # Start monitoring directories
     monitor_directories(directories_to_monitor, slack_webhook_url)
+
+if __name__ == "__main__":
+    load_dotenv()
+    main()
