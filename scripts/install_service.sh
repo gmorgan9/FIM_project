@@ -20,7 +20,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=python3 /usr/local/bin/fim_tools/automate.py
+ExecStart=python3 /usr/local/bin/fim_tool/automate.py
 Restart=always
 
 [Install]
