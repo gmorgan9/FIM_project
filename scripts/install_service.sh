@@ -10,7 +10,7 @@ fi
 mkdir /usr/local/bin/fim_tool
 cp ../automate.py /usr/local/bin/fim_tool/automate.py
 touch /usr/local/bin/fim_tool/directories.txt
-chmod +x /usr/local/bin/automate.py
+chmod +x /usr/local/bin/fim_tool/automate.py
 
 # Create a systemd service file
 cat <<EOF > /etc/systemd/system/file_integrity_monitor.service
