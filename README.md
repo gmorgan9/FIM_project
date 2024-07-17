@@ -33,7 +33,7 @@ Before you begin, ensure you have met the following requirements:
 
 3. **Setup environment variables:**
 
-Create a `.env` file in the root directory with the following content:
+Create a ```.env``` file in the root directory with the following content:
 
     ```bash
     SLACK_WEBHOOK_URL=https://hooks.slack.com/services/your/slack/webhook/url
