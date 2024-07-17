@@ -34,7 +34,6 @@ def send_slack_notification(file_path, directory, file_name, change_type, user, 
 
     # Construct the Slack message using Block Kit JSON
     message = (
-        f"*File Integrity Alert*\n"
         f"Host: `{hostname}`\n"
         f"File Path: `{file_path}`\n"
         f"Directory: `{directory}`\n"
