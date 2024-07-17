@@ -25,28 +25,14 @@ Before you begin, ensure you have met the following requirements:
 - Access to Slack webhook URL for notifications
 ## Installation
 
-Install my-project with npm
-
-```bash
- npm install my-project
- cd my-project
-```
-    
-
 1. **Clone the repository:**
 
 ```bash
- git clone https://github.com/yourusername/file-integrity-monitor.git
- cd file-integrity-monitor
+ git clone https://github.com/gmorgan9/FIM_project.git
+ cd FIM_project
 ```
 
-2. **Install dependencies:**
-
-```bash
- pip install -r requirements.txt
-```
-
-3. **Setup environment variables:**
+2. **Setup environment variables:**
 
 Create a `.env` file in the root directory with the following content:
 
@@ -56,23 +42,34 @@ Create a `.env` file in the root directory with the following content:
 
 Replace `https://hooks.slack.com/services/your/slack/webhook/url` with your actual Slack webhook URL.
 
-4. **Configure directories to monitor:** ***UPDATE THIS*****
-
-Edit `directories.txt` file in the fim_tool directory to include directories you want to monitor, each on a new line.
-
-Example `directories.txt`:
+3. **Install as a service:**
 
 ```bash
- /path/to/directory1
- /path/to/directory2
+ cd scripts
+ chmod +x install_service.sh uninstall_service.sh
+ sudo ./install_service.sh
 ```
 
-5. **Confirm the the installation script permissions:**
+4. **Configure directories to monitor:**
 
-Move to the `scripts` directory within the project directory. Run the following command to allow for execution of both the installation and uninstallation scripts:
+Add directories to the `directories.txt` file using the following python script. This script will allow you to include directories you want to monitor, each on a new line.
 
+```bash
+ sudo python3 add_directory.py
 ```
- chmod +x install_service_script.sh uninstall_service.sh
+
+5. **Restart the FIM Project Tools:**
+
+```bash
+ sudo systemctl restart file_integrity_monitor.service
+```
+
+## Uninstall Service
+
+Redirect to the `FIM_project/scripts` directory to run the following command:
+
+```bash
+ sudo ./uninstall_service.sh
 ```
 
 ## Usage
@@ -85,4 +82,4 @@ Contributions are welcome via a request! If you encounter any issues or have sug
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the GPL-3.0 License - see the LICENSE file for details.
