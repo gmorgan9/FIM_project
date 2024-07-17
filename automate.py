@@ -5,6 +5,7 @@ import requests
 import socket  # for getting hostname
 import pwd  # for getting username from UID
 from dotenv import load_dotenv
+from datetime import datetime  # for getting the current date and time
 
 # Load environment variables from .env file
 load_dotenv()
@@ -31,6 +32,7 @@ def get_username(uid):
 # Function to send Slack notification with structured message
 def send_slack_notification(file_path, directory, file_name, change_type, user, webhook_url):
     hostname = get_hostname()
+    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     # Construct the Slack message using Block Kit JSON
     message = (
@@ -39,7 +41,8 @@ def send_slack_notification(file_path, directory, file_name, change_type, user, 
         f"Directory: `{directory}`\n"
         f"File Name: `{file_name}`\n"
         f"Change Type: `{change_type}`\n"
-        f"Changed By: `{user}`"
+        f"Changed By: `{user}`\n"
+        f"Timestamp: `{timestamp}`"
     )
 
     data = {
