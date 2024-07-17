@@ -36,7 +36,7 @@ Before you begin, ensure you have met the following requirements:
 Create a `.env` file in the root directory with the following content:
 
     ```bash
-    SLACK_WEBHOOK_URL="https://hooks.slack.com/services/your/slack/webhook/url"
+    SLACK_WEBHOOK_URL=https://hooks.slack.com/services/your/slack/webhook/url
     ```
 
 Replace `https://hooks.slack.com/services/your/slack/webhook/url` with your actual Slack webhook URL.
