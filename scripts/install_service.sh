@@ -9,6 +9,7 @@ fi
 # Copy automate.py to a suitable location
 mkdir /usr/local/bin/fim_tool
 cp ../automate.py /usr/local/bin/fim_tool/automate.py
+cp ../.env /usr/local/bin/fim_tool/.env
 touch /usr/local/bin/fim_tool/directories.txt
 chmod +x /usr/local/bin/fim_tool/automate.py
 
