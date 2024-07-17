@@ -6,12 +6,8 @@ This tool monitors specified directories for changes in file integrity and sends
 ![GitHub License](https://img.shields.io/github/license/gmorgan9/FIM_project?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/gmorgan9/FIM_project?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gmorgan9/FIM_project?style=for-the-badge&label=project%20size)
-![GitHub language count](https://img.shields.io/github/languages/count/gmorgan9/FIM_project?style=for-the-badge)
 ![GitHub Release Date](https://img.shields.io/github/release-date/gmorgan9/FIM_project?style=for-the-badge)
-
-
-
-
+![GitHub Release](https://img.shields.io/github/v/release/gmorgan9/FIM_project?style=for-the-badge)
 
 ## Features
 
