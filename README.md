@@ -41,7 +41,7 @@ Create a `.env` file in the root directory with the following content:
 
 Replace `https://hooks.slack.com/services/your/slack/webhook/url` with your actual Slack webhook URL.
 
-4. ***Configure directories to monitor:***
+4. **Configure directories to monitor:**
 
 Edit `directories.txt` file in the fim_tool directory to include directories you want to monitor, each on a new line.
 
@@ -52,7 +52,7 @@ Example `directories.txt`:
    /path/to/directory2
     ```
 
-5. ***Confirm the the installation script permissions:***
+5. **Confirm the the installation script permissions:**
 
 Move to the `scripts` directory within the project directory. Run the following command to allow for execution of both the installation and uninstallation scripts:
 
