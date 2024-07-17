@@ -42,7 +42,7 @@ def send_slack_notification(file_path, directory, file_name, change_type, user, 
         f"File Name: `{file_name}`\n"
         f"Change Type: `{change_type}`\n"
         f"Changed By: `{user}`\n"
-        f"Timestamp: `{timestamp}`"
+        f"Timestamp: `{timestamp} UTC`"
     )
 
     data = {
