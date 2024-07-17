@@ -80,6 +80,9 @@ def monitor_directories(directories, webhook_url):
         for root, _, files in os.walk(directory):
             for file in files:
                 file_path = os.path.join(root, file)
+                # Skip .swp files
+                if file.endswith('.swp'):
+                    continue
                 monitored_files[file_path] = calculate_hash(file_path)
 
     # Monitoring loop
@@ -102,7 +105,8 @@ def monitor_directories(directories, webhook_url):
             for root, _, files in os.walk(directory):
                 for file in files:
                     file_path = os.path.join(root, file)
-                    if file_path not in monitored_files:
+                    # Skip .swp files
+                    if file_path not in monitored_files and not file.endswith('.swp'):
                         user = get_username(os.stat(file_path).st_uid)
                         send_slack_notification(file_path, directory, file, "Created", user, webhook_url)
                         monitored_files[file_path] = calculate_hash(file_path)
@@ -122,5 +126,4 @@ def main():
     monitor_directories(directories_to_monitor, slack_webhook_url)
 
 if __name__ == "__main__":
-    load_dotenv()
     main()
