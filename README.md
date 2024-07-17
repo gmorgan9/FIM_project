@@ -3,7 +3,7 @@
 
 This tool monitors specified directories for changes in file integrity and sends Slack notifications when changes are detected.
 
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/gmorgan9/FIM_project/total)
+![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/gmorgan9/FIM_project/latest/total)
 
 
 ## Features
