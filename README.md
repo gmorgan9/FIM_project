@@ -1,12 +1,17 @@
-# File Integrity Monitoring Tool
+
+# FIM - File Integrity Monitoring Tool
 
 This tool monitors specified directories for changes in file integrity and sends Slack notifications when changes are detected.
+
+
+
 
 ## Features
 
 - Monitors multiple directories simultaneously.
 - Sends Slack notifications on file creation, modification, and deletion.
 - Supports skipping `.swp` files (optional).
+
 
 ## Prerequisites
 
@@ -15,50 +20,57 @@ Before you begin, ensure you have met the following requirements:
 - Python 3.x installed
 - `pip` package manager
 - Access to Slack webhook URL for notifications
-
 ## Installation
+
+Install my-project with npm
+
+```bash
+ npm install my-project
+ cd my-project
+```
+    
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/yourusername/file-integrity-monitor.git
-    cd file-integrity-monitor
-    ```
+```bash
+ git clone https://github.com/yourusername/file-integrity-monitor.git
+ cd file-integrity-monitor
+```
 
 2. **Install dependencies:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+ pip install -r requirements.txt
+```
 
 3. **Setup environment variables:**
 
-Create a ```.env``` file in the root directory with the following content:
+Create a `.env` file in the root directory with the following content:
 
-    ```bash
-    SLACK_WEBHOOK_URL=https://hooks.slack.com/services/your/slack/webhook/url
-    ```
+```bash
+ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/your/slack/webhook/url
+```
 
 Replace `https://hooks.slack.com/services/your/slack/webhook/url` with your actual Slack webhook URL.
 
-4. **Configure directories to monitor:**
+4. **Configure directories to monitor:** ***UPDATE THIS*****
 
 Edit `directories.txt` file in the fim_tool directory to include directories you want to monitor, each on a new line.
 
 Example `directories.txt`:
 
-    ```bash
-    /path/to/directory1
-   /path/to/directory2
-    ```
+```bash
+ /path/to/directory1
+ /path/to/directory2
+```
 
 5. **Confirm the the installation script permissions:**
 
 Move to the `scripts` directory within the project directory. Run the following command to allow for execution of both the installation and uninstallation scripts:
 
-    ```
-    chmod +x install_service_script.sh uninstall_service.sh
-    ```
+```
+ chmod +x install_service_script.sh uninstall_service.sh
+```
 
 ## Usage
 
@@ -70,4 +82,6 @@ Contributions are welcome via a request! If you encounter any issues or have sug
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://makeapullrequest.com)
+[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
+[![Check Resources](https://github.com/freeCodeCamp/how-to-contribute-to-open-source/actions/workflows/test.yml/badge.svg)](https://github.com/freeCodeCamp/how-to-contribute-to-open-source/actions/workflows/test.yml)
