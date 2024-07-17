@@ -3,9 +3,8 @@
 
 This tool monitors specified directories for changes in file integrity and sends Slack notifications when changes are detected.
 
-[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://makeapullrequest.com)
-[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
-[![Check Resources](https://github.com/freeCodeCamp/how-to-contribute-to-open-source/actions/workflows/test.yml/badge.svg)](https://github.com/freeCodeCamp/how-to-contribute-to-open-source/actions/workflows/test.yml)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/gmorgan9/FIM_project/total)
+
 
 ## Features
 
