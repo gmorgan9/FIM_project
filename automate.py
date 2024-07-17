@@ -77,6 +77,9 @@ def monitor_directories(directories, webhook_url):
     # Initial scan of directories
     for directory in directories:
         for root, _, files in os.walk(directory):
+            # Skip .git directories
+            if '.git' in root.split(os.path.sep):
+                continue
             for file in files:
                 file_path = os.path.join(root, file)
                 # Skip .swp files
@@ -102,6 +105,9 @@ def monitor_directories(directories, webhook_url):
         # Check for new files in all directories
         for directory in directories:
             for root, _, files in os.walk(directory):
+                # Skip .git directories
+                if '.git' in root.split(os.path.sep):
+                    continue
                 for file in files:
                     file_path = os.path.join(root, file)
                     # Skip .swp files
